@@ -1,0 +1,60 @@
+@import '~@com/index.less';
+
+.dm_orderDetails {
+  .address {
+    &.address_one {
+      .atList {
+        border-bottom: 1px solid @body-color;
+        &.atList_border {
+          .at-list__item {
+            border-bottom: 0 none;
+          }    
+        }
+      }
+    }
+    .atList {
+      .item-content__info-title {
+        font-size: 14Px;
+      }
+      .item-content__info-note {
+        font-size: 12Px;
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &.atList_width {
+        .at-list__item-content {
+          max-width: 90% !important;
+        }
+      }
+    }
+  }
+  .info {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    .at-list__item {
+      padding: 6Px 0;
+      &.pay_money {
+        .item-extra__info {
+          color: @main-color;
+          font-size: 20Px;
+        }
+      }
+      .item-content__info-title, .item-extra__info {
+        font-size: 12Px;
+      }
+      .item-content__info-title {
+        color: @font-color-555;
+      }
+      .item-extra__info {
+        color: #000;
+      }
+    }
+    .atList_border {
+      .at-list__item {
+        border-bottom: 0 none;
+      }    
+    }
+  }
+}

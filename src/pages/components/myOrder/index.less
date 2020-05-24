@@ -1,0 +1,76 @@
+@import '~@com/index.less';
+
+.dm_MyOrder {
+  .comment_btn {
+    display: flex;
+    justify-content: flex-end;
+    .dm_atButton {
+      width: 100px;
+      .at-button {
+        height: 21Px;
+        line-height: 21Px;
+        font-size: 12Px;
+      }
+    }
+  }
+  .dm_MyOrder_content {
+    padding-top: 10Px;
+    .main_content {
+      border-bottom: 0 none; 
+    }
+    .bottom_btns {
+      .p_info {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          >text {
+              margin-right: .6rem;
+              font-size: 12Px;
+          }
+          >view {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              text {
+                font-size: 12Px;
+                color: @main-color;
+                &:first-child {
+                  color: #000;
+                }
+                &:last-child {
+                  font-size: 16Px;
+                  margin: 0 0 6px 0;
+                }
+              }
+          }
+      }
+      .btns {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10Px 0;
+          .left, .right {
+            flex: 1;
+          }
+          .left {
+            font-size: 12Px;
+            color: @font-color-555;
+            text {
+              display: block;
+            }
+          }
+          .right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .dm_atButton {
+              margin-left: 10Px;
+              .at-button__text {
+                font-size: 12Px;
+              }
+            }
+          }
+      }
+    }
+  }
+}

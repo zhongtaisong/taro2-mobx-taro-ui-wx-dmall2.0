@@ -1,0 +1,99 @@
+@import '~@com/index.less';
+
+.dm_SettlementPage {
+  .address {
+    &.address_one {
+      .atList {
+        border-bottom: 1px solid @body-color;
+        &.atList_border {
+          .at-list__item {
+            border-bottom: 0 none;
+          }    
+        }
+      }
+
+    }
+    &.address_list {
+      .atList {
+        .item-extra__info {
+          font-size: 13Px;
+          color: @main-color;
+        }
+      }
+    }
+    .atList {
+      .item-content__info-title {
+        font-size: 16Px;
+      }
+      .item-content__info-note {
+        font-size: 12Px;
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &.atList_width {
+        .at-list__item-content {
+          max-width: 90% !important;
+        }
+      }
+    }
+  }
+  .info {
+    padding: 10px 0;
+    .at-list__item {
+      padding: 6Px 0;
+      .item-content__info-title, .item-extra__info {
+        font-size: 12Px;
+      }
+      .item-content__info-title {
+        color: @font-color-555;
+      }
+      .item-extra__info {
+        color: #000;
+      }
+    }
+    .atList_border {
+      .at-list__item {
+        border-bottom: 0 none;
+      }    
+    }
+  }
+  .bottom_tab_btns {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 42Px;
+      line-height: 42Px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      z-index: 999;
+      border-top: 1px solid @body-color;
+      view {
+          height: 100%;
+          text-align: center;
+          font-size: 16Px;
+          overflow: hidden;
+          &:first-child {
+            max-width: 60%;
+            flex: 1;
+            color: @main-color;
+            font-size: 20Px;
+            text {
+                font-style: normal;
+                vertical-align: baseline;
+                font-size: 12Px;
+                font-weight: bold;
+            }
+          }
+          &:last-child {
+            background: @main-color;
+            color: #fff;
+            width: 40%;
+          }
+      }
+  }
+}

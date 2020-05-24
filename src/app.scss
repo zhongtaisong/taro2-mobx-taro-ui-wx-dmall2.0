@@ -1,0 +1,255 @@
+@import '~@com/index.scss';
+// 单行不换行溢出显示省略号
+.ellipsis {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+// 模态框
+.dm_AtModal {
+  .at-modal__container {
+    width: 100%;
+    height: 100%;
+  }
+}
+// 商品详情
+.dm_ProductsDetail {
+  .at-nav-bar {
+    background: transparent;
+    &:after {
+      border: 0 none;
+    }
+  }
+  .product_spec {
+    .at-list__item {
+      padding-left: 0;
+      padding-right: 0;
+      .at-list__item-container {
+        justify-content: space-between;
+        .at-list__item-content {
+          min-width: 30%;
+          flex: none;
+          .item-content__info-title {
+            font-size: 12Px;
+          }
+        }
+        .at-list__item-extra {
+          max-width: auto;
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          .item-extra__info {
+            font-size: 14Px;
+            flex: 1;
+            padding-right: 40px;
+          }
+          .item-extra__icon {
+            width: 30Px;
+          }
+        }
+      }
+    }
+  }
+}
+// 分割线
+.line {
+  width: 100%;
+  height: 10Px;
+  background: $body-color;
+}
+// 列表
+.dm_AtList {
+  .atList {
+    .at-list__item {
+      padding-left: 0;
+      padding-right: 0;
+      border-bottom: 1px solid $body-color;
+      .at-list__item-container {
+        justify-content: space-between;
+        .at-list__item-content {
+          max-width: 30%;
+          flex: none;
+          .item-content__info {
+            .item-content__info-title {}
+          }
+        }
+        .at-list__item-extra {
+          max-width: 70%;
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          .item-extra__info {}
+          .item-extra__icon {
+            .at-icon {
+              font-size: 19Px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .atList_border {
+    .at-list__item {
+      border-bottom: 1px solid $body-color;
+    }    
+  }
+  .atList_width {
+    .at-list__item-content {
+      max-width: 30%;
+    }
+  }
+  .dm_custom_AtList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $body-color;
+    padding: 24rpx 0;
+    .left {}
+    .right {}
+  }
+}
+// 活动面板
+.dm_actionSheet {
+  .at-action-sheet {
+    .at-action-sheet__overlay {}
+    .at-action-sheet__container {
+      .at-action-sheet__header {
+        font-size: 16Px;
+      }
+      .at-action-sheet__body {
+        .at-action-sheet__item {
+          font-size: 16Px;
+          &.active {
+            color: $main-color;
+          }
+        }
+      }
+      .at-action-sheet__footer {
+        font-size: 16Px;
+      }
+    }
+  }
+}
+// form
+.dm_AtForm {
+  &::after {
+    border-top-width: 0;
+    border-bottom-width: 0;
+  }
+  .err_tip {
+    font-size: 13Px;
+    height: 30Px;
+    line-height: 30Px;
+    color: $main-color;
+  }
+  .handle_btn {
+    padding: 30Px 0 20Px;
+  }
+  .other_handle {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    text {
+      font-size: 14Px;
+      color: $font-color-555;
+    }
+  }
+}
+// input
+.dm_atInput {
+  .at-input {
+    &:after {
+      border-top: 1px solid $body-color;
+      border-bottom: 1px solid $body-color;
+    }
+    margin-bottom: 0;
+    margin-left: 0;
+    .at-input--disabled {
+      opacity: 1;
+    }
+    .at-input__title {
+      color: $font-color-555;
+    }
+  }
+}
+// 搜索栏
+.dm_AtSearchBar {
+  .at-search-bar {
+    &:after {
+      border-bottom: 0 none;
+    }
+  }
+  // 隐藏AtSearchBar搜索按钮
+  .AtSearchBar_hideBtn {
+    .at-search-bar__action {
+      display: none !important;
+    }
+  }
+}
+// 导航
+.dm_AtNavBar {
+  &:after {
+    border-color: $body-color;
+  }
+}
+// 多选
+.dm_atCheckbox {
+  .at-checkbox {
+    &:after, &:before {
+      border: 0 none;
+    }
+    .at-checkbox__option {
+      padding-left: 0;
+      .at-checkbox__option-wrap {
+        padding-right: 0;
+        .at-checkbox__option-cnt {
+          align-items: center;
+          .at-checkbox__title {
+            font-size: 14Px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+// 标签
+.dm_atTag {
+  margin-right: 4Px;
+}
+// 多行输入
+.dm_AtTextarea {
+  .at-textarea {
+    border-width: 1px;
+    border-color: $body-color;
+    .at-textarea__textarea {
+      font-size: 16Px;
+    }
+  }
+}
+// 数字输入框
+.dm_atInputNumber {
+  .at-input-number, .at-input-number__input {
+    border-color: $body-color;
+  }
+  .at-input-number {
+    border-radius: 4px;
+  }
+}
+// 选择器
+.dm_Picker {}
+// 更多
+.dm_AtLoadMore {
+  .at-load-more {
+    .at-button {
+      border: 0 none;
+    }
+    .at-activity-indicator__content {
+      font-size: 12Px;
+    }
+  }
+
+}

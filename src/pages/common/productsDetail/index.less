@@ -1,0 +1,71 @@
+@import '~@com/index.less';
+
+.dm_ProductsDetail {
+  .Products_ProductsDetail_AtList {
+    .item-content__info-title {
+      font-size: 12Px;
+    }
+    .item-extra__info {
+      font-size: 14Px;
+    }
+    .dm_custom_AtList {
+      .left {
+        font-size: 12Px;
+      }
+      .right {}
+    }
+  }
+  .comment_list {
+    .at-list__item-extra {
+      display: inline-block !important;
+      .item-extra__info {
+        font-size: 13Px;
+      }
+    }
+  }
+  .bottom_tab_btns {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 50Px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #fff;
+      z-index: 999;
+      border-top: 1px solid #f0f0f0;
+      .cart {
+          flex: 1;
+          max-width: 10%;
+          height: 100%;
+          padding: 0 30Px;
+          .at-badge {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            image {
+              width: 100%;
+              height: 70%;
+            }
+          }
+      }
+      .btn {
+          display: inline-block;
+          height: 100%;
+          text-align: center;
+          flex: 1;
+          font-size: 16Px;
+          color: #fff;
+          line-height: 50Px;
+          &.btn01 {
+              background: @main-color;
+          }
+          &.btn02 {
+              background: #0e80d2;
+          }
+      }
+  }
+}
