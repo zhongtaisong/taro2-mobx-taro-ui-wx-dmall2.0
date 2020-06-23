@@ -29,7 +29,7 @@ class Index extends Taro.Component {
     handleSubmit = (e, values) => {
       let { upwd, confirm, uname } = values || {};
       let obj = JSON.parse(JSON.stringify(values));
-      if( !(/\w/g.test(uname)) ) {
+      if( !(/^(\w)+$/g.test(uname)) ) {
         this.setState({ otherErrTip: '亲，用户名只能由英文、数字、"_"组成' })
         return;
       }
